@@ -5,10 +5,10 @@ import Vector from '../assets/Vector.png';
 import Mob from '../assets/mob.png';
 import Email from '../assets/em.png';
 import Logo from '../assets/tech_surya.png';
-import FacebookIcon from '../../public/facebook.png';
-import TwitterIcon from  '../../public/twitter.png';
-import YouTubeIcon from '../../public/youtube.png';
-import InstagramIcon from '../../public/instagram.png';
+import FacebookIcon from '/facebook.png';
+import TwitterIcon from  '/Twitter.png';
+import YouTubeIcon from '/Youtube.png';
+import InstagramIcon from '/Instagram.png';
 
 function Footer() {
   return (
