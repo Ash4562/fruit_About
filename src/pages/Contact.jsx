@@ -99,7 +99,7 @@ function Contact() {
   };
 
   return (
-    <div id='contactus' className='flex items-center justify-center px-4 mb-24 sm:px-8 lg:px-20'>
+    <div id='contactus' className='flex items-center justify-center px-4 mb-24 sm:px-8 lg:px-20 '>
  <div
   style={{ backgroundImage: `url(${lemons})` }}
   className="relative w-full max-w-7xl bg-cover bg-center min-h-[300px] rounded-lg sm:min-h-[400px] md:min-h-[500px]"

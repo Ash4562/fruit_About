@@ -44,7 +44,7 @@ const Our_product = () => {
   return (
     <section
       id="products"
-      className="py-10 my-10 px-5 md:px-20 w-full min-h-[700px] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center"
+      className="py-10 my-10 px-5 md:px-20 w-full min-h-[800px] bg-cover bg-center bg-no-repeat flex flex-col items-center justify-center"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",
@@ -92,11 +92,11 @@ const Our_product = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-col justify-between w-full h-[130px] p-4 bg-green-800 md:w-1/2 lg:h-52">
-                  <h3 className="mb-2 text-lg font-semibold text-white sm:text-xl">
+                <div className="flex flex-col justify-between w-full h-[130px] p-4 bg-green-800 md:w-1/2 lg:h-60">
+                  <h3 className="xl:mt-5 text-lg font-semibold text-white sm:text-xl">
                     {product.name}
                   </h3>
-                  <p className="text-sm sm:text-base text-amber-100">
+                  <p className="text-sm sm:text-base text-amber-100 xl:mb-5">
                     {product.description}
                   </p>
                 </div>

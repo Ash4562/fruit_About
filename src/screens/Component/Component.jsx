@@ -354,7 +354,7 @@ export const Component = () => {
             {/* Fruit Title */}
             <h1
               style={{ fontFamily: "'Lalezar', cursive" }}
-              className={`text-center text-[50px] md:text-[132px] tracking-wider lg:mt-1  ${colors.primary}`}
+              className={`text-center text-[50px] md:text-[132px] tracking-wider xl:mt-20  ${colors.primary}`}
             >
               {currentFruit.name}
             </h1>
