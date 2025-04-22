@@ -58,7 +58,7 @@ const Navbar = () => {
             {/* Hamburger Toggle */}
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="p-2 transition-opacity hover:opacity-75"
+              className="p-2 transition-opacity hover:opacity-75 "
               style={{ color: textColor }}
             >
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -73,15 +73,19 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="absolute left-0 w-full bg-white shadow-xl top-full">
             <div className="container px-6 py-4 mx-auto">
-              {['Home', 'About', 'Services', 'Contact'].map((item) => (
-                <a 
-                  key={item} 
-                  href="#" 
-                  className="block py-3 text-xl text-gray-800 transition-colors hover:bg-gray-50"
-                >
-                  {item}
-                </a>
-              ))}
+            {['Home', 'About', 'Services', 'Contact'].map((item) => (
+  <a 
+    key={item} 
+    href="#" 
+    onClick={(e) => {
+      e.preventDefault(); // prevent page jump
+      setIsMenuOpen(false); // close menu
+    }}
+    className="block py-3 text-xl text-gray-800 transition-colors hover:bg-gray-50"
+  >
+    {item}
+  </a>
+))}
             </div>
           </div>
         )}

@@ -52,16 +52,7 @@ function Footer() {
       <div className='border border-[#FFF4B8] w-full my-4'></div>
 
       <div className='flex flex-col sm:flex-row justify-between items-center text-[#FFFFFF] w-full space-y-4 sm:space-y-0'>
-        <p className='text-sm sm:text-base'>&copy; All rights reserved.</p>
-
-        <div className='flex items-center gap-2'>
-          <p className='text-base'>Developed By</p>
-          <a href="https://techsuryaitsolution.com/" target="_blank" rel="noopener noreferrer">
-            <img className='h-12' src={Logo} alt="Tech Surya Logo" />
-          </a>
-        </div>
-
-        <div className="flex items-center gap-4">
+      <div className="flex items-center gap-4">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <img src={FacebookIcon} alt="Facebook" className="w-6 h-6" />
           </a>
@@ -75,6 +66,16 @@ function Footer() {
             <img src={InstagramIcon} alt="Instagram" className="w-6 h-6" />
           </a>
         </div>
+        <p className='text-sm sm:text-base'>&copy; All rights reserved.</p>
+
+        <div className='flex items-center gap-2'>
+          <p className='text-base'>Developed By</p>
+          <a href="https://techsuryaitsolution.com/" target="_blank" rel="noopener noreferrer">
+            <img className='h-12' src={Logo} alt="Tech Surya Logo" />
+          </a>
+        </div>
+
+   
       </div>
     </div>
   );

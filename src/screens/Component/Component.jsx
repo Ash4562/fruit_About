@@ -282,9 +282,27 @@ export const Component = () => {
                         <a
                           href={`#${sectionId}`}
                           className={`block px-4 py-3 text-lg font-medium ${colors.menuText} hover:bg-opacity-20 rounded-lg transition-colors`}
+                          onClick={(e) => {
+                            e.preventDefault();
+                            setIsMenuOpen(false);
+                            const target = document.getElementById(sectionId);
+                            if (target) {
+                              target.scrollIntoView({ behavior: 'smooth' });
+                            }
+                          }}
                         >
                           {item}
                         </a>
+                        {/* <a
+                          href={`#${sectionId}`}
+                          className={`block px-4 py-3 text-lg font-medium ${colors.menuText} hover:bg-opacity-20 rounded-lg transition-colors`}
+                          onClick={(e) => {
+                            e.preventDefault(); // prevent page jump
+                            setIsMenuOpen(false); // close menu
+                          }}
+                        >
+                          {item}
+                        </a> */}
                       </li>
                     );
                   })}
@@ -297,23 +315,23 @@ export const Component = () => {
       </AnimatePresence>
 
       <div className="container  relative mx-auto  px-5 py-6 h-full md:max-w-[1440px]  ">
-      <div className="z-50 flex items-center w-full  bg-white md:justify-center sm:flex h-24  rounded-2xl sm:h-0  ">
-      <div className="absolute size-[90px]  md:size-[94px] mt-2 md:top-10    md:left-14 sm:mt-0  bg-white rounded-full ">
-          <img  className="object-cover p-4 w-30" alt="Logo" src="/wala--2--1.png " />
-        </div>
+        <div className="z-50 flex items-center w-full  bg-white md:justify-center sm:flex h-24  rounded-2xl sm:h-0  ">
+          <div className="absolute size-[90px]  md:size-[94px] mt-2 md:top-10    md:left-14 sm:mt-0  bg-white rounded-full ">
+            <img className="object-cover p-4 w-30" alt="Logo" src="/wala--2--1.png " />
+          </div>
 
-        {/* Cart Button */}
-        <Button
-          variant="outline"
-          style={{
-            background: 'linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 244, 184, 0.6) 100%)',
-          }}
-          className="absolute mt-2 size-[40px] md:size-[63px] md:top-10 md:right-20 top-10 right-6 rounded-[9px] border-2 border-[#FFF4B8] p-0 flex items-center justify-center"
-          onClick={toggleMenu}
-        >
-          <img src={vector} className=" size-4 md:size-6" alt="" />
-        </Button>
-      </div>
+          {/* Cart Button */}
+          <Button
+            variant="outline"
+            style={{
+              background: 'linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 244, 184, 0.6) 100%)',
+            }}
+            className="absolute mt-2 size-[40px] md:size-[63px] md:top-10 md:right-20 top-10 right-6 rounded-[9px] border-2 border-[#FFF4B8] p-0 flex items-center justify-center"
+            onClick={toggleMenu}
+          >
+            <img src={vector} className=" size-4 md:size-6" alt="" />
+          </Button>
+        </div>
         {/* Logo */}
 
         <div className="relative w-full max-w-[1022px] md:!-mb-96 mx-auto md:ml-44 mt-80 md:mt-[30px]">
