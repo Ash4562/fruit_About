@@ -25,12 +25,13 @@ function Footer() {
       </div>
 
       <div className="space-y-3">
-        <div className="items-center gap-3 justify-enter md:flex">
-          <img src={Vector} alt="Location Icon" className="w-5 h-6" />
-          <p className='text-[#FFF4B8] text-[16px] font-normal'>
-            Chhatrapati Sambhajinagar, Maharashtra, India
-          </p>
-        </div>
+      <div className="flex items-center gap-3 justify-center sm:justify-start md:justify-start">
+  <img src={Vector} alt="Location Icon" className="w-5 h-6" />
+  <p className='text-[#FFF4B8] text-[16px] font-normal'>
+    Chhatrapati Sambhajinagar, MH, India
+  </p>
+</div>
+
 
         <div className="flex items-center justify-center gap-3">
           <img src={Mob} alt="Phone Icon" className="w-6 h-6" />
@@ -51,8 +52,10 @@ function Footer() {
 
       <div className='border border-[#FFF4B8] w-full my-4'></div>
 
-      <div className='flex flex-col sm:flex-row justify-between items-center text-[#FFFFFF] w-full space-y-4 sm:space-y-0'>
-      <div className="flex items-center gap-4">
+      <div className='flex flex-col sm:flex-row justify-between items-center mb-4 text-[#FFFFFF] w-full space-y-4 sm:space-y-0'>
+             
+                  <p className='text-sm sm:text-base'>&copy; All rights reserved.</p>
+             <div className="flex items-center gap-4">
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <img src={FacebookIcon} alt="Facebook" className="w-6 h-6" />
           </a>
@@ -66,7 +69,7 @@ function Footer() {
             <img src={InstagramIcon} alt="Instagram" className="w-6 h-6" />
           </a>
         </div>
-        <p className='text-sm sm:text-base'>&copy; All rights reserved.</p>
+   
 
         <div className='flex items-center gap-2'>
           <p className='text-base'>Developed By</p>
