@@ -25,7 +25,7 @@ function Footer() {
       </div>
 
       <div className="space-y-3">
-      <div className="flex items-center gap-3 justify-center sm:justify-start md:justify-start">
+      <div className="flex mt-6 items-center gap-3 justify-center sm:justify-start md:justify-start">
   <img src={Vector} alt="Location Icon" className="w-5 h-6" />
   <p className='text-[#FFF4B8] text-[16px] font-normal'>
     Chhatrapati Sambhajinagar, MH, India
@@ -44,7 +44,7 @@ function Footer() {
         </div>
 
         <Link to="/privacy-policy">
-          <button className='pb-6 text-[#FFF4B8] text-[16px] font-normal'>
+          <button className='pb-6 mt-4 text-[#FFF4B8] text-[16px] font-normal'>
             Privacy Policy | Terms & Conditions
           </button>
         </Link>
